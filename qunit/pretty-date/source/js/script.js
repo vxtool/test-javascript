@@ -60,7 +60,7 @@ let PrettyDate = class PrettyDate {
 		let difference_in_days = that.countDays(difference);
 
 		if ( isNaN(difference_in_days) || difference_in_days < 0 || difference_in_days >= 31 ) {
-		  return false;
+		  return;
 		}
 
     return that.messageFormat(difference, difference_in_days);
