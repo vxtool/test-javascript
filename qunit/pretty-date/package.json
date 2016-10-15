@@ -1,6 +1,6 @@
 {
   "name": "prettydate",
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://hemersonvianna.io)",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (http://descco.com.br)",
   "dependencies": {},
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",

@@ -1,4 +1,4 @@
-let PrettyDate = class PrettyDate {
+const PrettyDate = class PrettyDate {
 	constructor() {
 		this.second = 1000;
 		this.minute = 60 * this.second;
@@ -11,12 +11,12 @@ let PrettyDate = class PrettyDate {
 	};
 
   countDays(date) {
-    let that = this;
+    const that = this;
     return Math.floor(date / that.day);
   }
 
   messageFormat(date, numberDays){
-    let that = this;
+    const that = this;
     let message;
 
     switch(true) {
@@ -54,7 +54,7 @@ let PrettyDate = class PrettyDate {
   }
 
 	format(now, time){
-		let that = this;
+		const that = this;
 		let date              = new Date(time || "");
 		let difference        = ((new Date(now)).getTime() - date.getTime());
 		let difference_in_days = that.countDays(difference);
